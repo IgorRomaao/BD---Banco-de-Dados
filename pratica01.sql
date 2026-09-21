@@ -1,10 +1,10 @@
--- Active: 1790007069151@@127.0.0.1@5432@bd_aula@public
+-- Active: 1790025432665@@127.0.0.1@5432@bd_hortifruti@public
 
 -- APS I - BANCO DE DADOS
 -- ALUNO: IGOR VINÍCIUS ROMAO DE MAGALHAES
 -- TURMA: SISTEMAS DE INFORMACAO - 4A
 
--- CREATE DATABASE bd_aula;  -------- Criação Data Base
+-- CREATE DATABASE bd_hortifruti; ;  -------- Criação Data Base
 
 
 -- CRIACAO DA TABELA:
@@ -91,7 +91,7 @@ INSERT INTO itens_venda (venda_id, data_venda, bairro_entrega, produto_id, produ
 categoria, unidade, quantidade, valor_unitario) VALUES
 (3017, '2026-08-08', NULL, 5, 'Tomate', 'Legume', 'Kg', 1.340, 8.99),
 (3017, '2026-08-08', NULL, 10, 'Alface crespa', 'Verdura', 'UN', 2.000, 3.49),
-(3017, '2026-08-08', NULL, 4, 'Morango', 'Fruta', 'UN', 1.000, 9.99)
+(3017, '2026-08-08', NULL, 4, 'Morango', 'Fruta', 'UN', 1.000, 9.99);
 
 SELECT
     venda_id AS "ID da Venda",

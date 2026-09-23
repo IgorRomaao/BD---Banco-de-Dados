@@ -1,4 +1,4 @@
--- Active: 1790025432665@@127.0.0.1@5432@bd_hortifruti@public
+-- Active: 1790201716621@@127.0.0.1@5432@bd_hortifruti@public
 
 -- APS I - BANCO DE DADOS
 -- ALUNO: IGOR VINÍCIUS ROMAO DE MAGALHAES
@@ -109,7 +109,7 @@ FROM
 
 --- CONSULTA 01
 
-SELECT DISTINCT 
+SELECT DISTINCT --------- DISTINCT: Faz a análise e retira linhas idênticas, monta a lista sem repetições
     produto_id,
     produto_nome,
     categoria,
@@ -146,8 +146,8 @@ SELECT
 FROM
     itens_venda
 WHERE
-    produto_nome LIKE 'Batata%'
-ORDER BY
+    produto_nome LIKE 'Batata%' ----------- LIKE: FILTRA POR ALGORITMO, %: USADO P/ FILTRAR UMA PALAVRA APÓS OU ANTERIOR
+ORDER BY                        ----------- Ex: Batata% = Batata, Batata-doce; ambas filtradas so com o algoritmo "batata"
     data_venda, 
     venda_id; 
 
